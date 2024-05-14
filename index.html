@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#"
+          ><img
+            class="header__branding"
+            src="./assets/images/logo.svg"
+            width="65"
+            height="40"
+            alt=""
+        /></a>
+
+        <img
+          id="menu-open"
+          class="header__menu"
+          src="./assets/images/icon-menu.svg"
+          alt=""
+        />
+
+        <nav id="menu" class="header__nav">
+          <img
+            id="menu-close"
+            class="header__close"
+            src="./assets/images/icon-menu-close.svg"
+            alt=""
+          />
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link--active" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">New</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Popular</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Trending</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="main">
+          <picture class="main__image">
+            <source
+              srcset="./assets/images/image-web-3-mobile.jpg"
+              media="(max-width: 425px)"
+              width="686"
+              height="600"
+            />
+
+            <img
+              alt=""
+              src="./assets/images/image-web-3-desktop.jpg"
+              height="600"
+              width="1460"
+            />
+          </picture>
+
+          <div class="main__content">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div class="main__text">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a class="button" href="#">Read more </a>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <h2 class="sidebar__title">New</h2>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <h3 class="sidebar__subtitle">Hydrogen VS Electric Cars</h3>
+                <p class="sidebar__text">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </li>
+              <li class="sidebar__divider"></li>
+              <li class="sidebar__item">
+                <h3 class="sidebar__subtitle">The Downsides of AI Artistry</h3>
+                <p class="sidebar__text">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </li>
+              <li class="sidebar__divider"></li>
+              <li class="sidebar__item">
+                <h3 class="sidebar__subtitle">Is VC Funding Drying Up?</h3>
+                <p class="sidebar__text">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="features-section">
+          <ul class="features">
+            <li class="feature">
+              <img
+                class="feature__image"
+                src="./assets/images/image-retro-pcs.jpg"
+                width="100"
+                height="127"
+                alt=""
+              />
+              <div class="feature__text">
+                <span class="feature__number">01</span>
+                <h2 class="feature__title">Reviving Retro PCs</h2>
+                <p class="feature__text">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </li>
+            <li class="feature">
+              <img
+                class="feature__image"
+                src="./assets/images/image-top-laptops.jpg"
+                width="100"
+                height="127"
+                alt=""
+              />
+              <div class="feature__text">
+                <span class="feature__number">02</span>
+                <h2 class="feature__title">Top 10 Laptops of 2022</h2>
+                <p class="feature__text">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </li>
+            <li class="feature">
+              <img
+                class="feature__image"
+                src="./assets/images/image-gaming-growth.jpg"
+                width="100"
+                height="127"
+                alt=""
+              />
+              <div class="feature__text">
+                <span class="feature__number">03</span>
+                <h2 class="feature__title">The Growth of Gaming</h2>
+                <p class="feature__text">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="attribution">
+        <p>
+          Challenge by
+          <a
+            class="attribution__link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="attribution__link"
+            href="https://rubendeman.nl"
+            target="_blank"
+            >Ruben de Man</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
