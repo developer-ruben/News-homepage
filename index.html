@@ -29,14 +29,15 @@
   <body>
     <div class="container">
       <header class="header">
-        <a class="header__logo" href="#"
-          ><img src="./assets/images/logo.svg" alt=""
+        <a class="header__logo" href="#" aria-label="Link back to Homepage"
+          ><img src="./assets/images/logo.svg" alt="News Logo"
         /></a>
         <button
           class="header__menu"
           id="menu-open"
           aria-label="Open Menu"
           aria-controls="nav"
+          type="button"
         >
           <img src="./assets/images/icon-menu.svg" alt="" />
         </button>
@@ -97,7 +98,7 @@
           </div>
         </section>
 
-        <div class="sidebar">
+        <aside class="sidebar">
           <h2 class="sidebar__title">New</h2>
           <ul class="sidebar__list">
             <li class="sidebar__item">
@@ -129,10 +130,10 @@
               </p>
             </li>
           </ul>
-        </div>
+        </aside>
 
         <div class="features-section">
-          <div class="feature">
+          <article class="feature">
             <img
               class="feature__image"
               src="./assets/images/image-retro-pcs.jpg"
@@ -147,8 +148,8 @@
                 What happens when old PCs are given modern upgrades?
               </p>
             </div>
-          </div>
-          <div class="feature">
+          </article>
+          <article class="feature">
             <img
               class="feature__image"
               src="./assets/images/image-top-laptops.jpg"
@@ -163,8 +164,8 @@
                 Our best picks for various needs and budgets.
               </p>
             </div>
-          </div>
-          <div class="feature">
+          </article>
+          <article class="feature">
             <img
               class="feature__image"
               src="./assets/images/image-gaming-growth.jpg"
@@ -179,7 +180,7 @@
                 How the pandemic has sparked fresh opportunities.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </main>
     </div>
